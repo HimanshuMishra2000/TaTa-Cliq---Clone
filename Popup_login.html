@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(235,235,235);
+        }
+        .container{
+          
+            background-color: white;
+          
+            text-align: center;
+            position:absolute;
+            top: 50%;
+            right: 40%;
+            transform: translate(-50%,-50%);
+            display: none;
+            flex-direction: column;
+            
+        }
+        #uname{
+            width: 60%;
+            height: 25px;
+            margin:30px;
+            padding: 5px;
+            cursor: pointer;
+            position: relative;
+
+        }
+        #pass {
+            width: 60%;
+            height: 25px;
+            margin:30px;
+            padding: 5px;
+            cursor: pointer; 
+        }
+        #sign_in{
+           position:relative; 
+            right: 1;
+
+        }
+
+    </style>
+</head>
+<body>
+    <button id="sign_in"> Sign in </button>
+    <div class="container">
+        <h1>Sign-up</h1>
+        <input id="uname" type="text" placeholder="Enter user name"/>
+        <br>
+        <input  id="pass" type="text" placeholder="Enter password">
+        <br>
+
+        <a href="#" class="button">Login</a>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",function(){
+        document.querySelector(".container").style.display="flex"
+    })
+</script>
